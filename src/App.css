@@ -1,7 +1,33 @@
 .App {
   text-align: center;
 }
+.App{
+  background-image: url(./styles/bgimg.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ width: 100vw;
+  height: 100vh;
+}
+h2{
+  font-size: 3em;
+  word-spacing: 10px;
+  font-family: 'Kanit', sans-serif;
+ 
+  font-weight: bold;
+  color: white; 
+ 
+}
+.Chat{
+  text-align: center;
 
+  background-image: url(./styles/bgimg.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

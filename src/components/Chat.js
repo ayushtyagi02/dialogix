@@ -33,25 +33,29 @@ useEffect(()=>{
         setNewMessage("")
     }
   return (
-    <div className='chat-app'>
-      <div className="header">
-        <h1>Welcome to {room.toUpperCase()}</h1>
-        </div> 
-    <div> {messages.map((message)=><div className="message" key ={message.id}>
-     <span className="user">{message.user}</span>
-     {message.text}
-     
-    </div>)}</div>
-    <form onSubmit={handleSubmit} className='new-message-form'>
-        
-        <input className="new-message-input"
-        placeholder="Type your messsage here.."
-        onChange={(e)=>setNewMessage(e.target.value)}
-        value={newMessage}/>
-        <button type="submit" className="send-button">
-            Send
-        </button>
-        </form>
-    </div>
+    <div className='Chat'>
+      <div className='chat-app'>
+    <div className="header border-2">
+      <h1 >Welcome to {room.toUpperCase()}</h1>
+      </div> 
+      
+  <div className='mt-10'> {messages.map((message)=><div className="message" key ={message.id}>
+   <span className="user ">{message.user}</span>
+   {message.text}
+   
+  </div>)}</div>
+  
+  <form onSubmit={handleSubmit} className='new-message-form'>
+      
+    <input className="new-message-input border-1 w-10/12 rounded-md"
+      placeholder="Type your messsage here.."
+      onChange={(e)=>setNewMessage(e.target.value)}
+      value={newMessage}/>
+      <button type="submit" className="send-button ml-2 w-3/12 rounded-md">
+          Send
+      </button>
+      </form>
+  </div></div>
+    
   )
 }

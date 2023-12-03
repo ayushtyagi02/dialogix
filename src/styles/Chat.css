@@ -1,19 +1,28 @@
+
 .chat-app {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 30rem;
+    overflow: scroll;
     font-family: sans-serif;
-    width: 90%;
-    margin: 0 auto;
+    width: 40%;
+    background-color:white;
+    position: absolute;
+    margin: 7vw 30vw;
     border-radius: 5px;
-    overflow: hidden;
+    
     border: 2px solid #3b5998;
   }
   .header {
+    position: fixed;
     background-color: #3b5998;
     color: white;
-    width: 100%;
+    width: 20%;
+    font-size: larger;
     text-align: center;
+    
+    border-radius: 4px;
   }
   .messages {
     display: flex;
@@ -40,20 +49,29 @@
   }
   
   .new-message-form {
+    
     display: flex;
-    width: 100%;
+    position: fixed;
+    gap: 1em;
+    width: 40%;
     padding: 10px;
+    
+    /* transform: translate(-8rem,-5rem); */
+    bottom: 5rem;
+    border-radius: 5px;
   }
   
   .new-message-input {
-    flex: 1;
-    border: none;
+    background-color: white;
+    display: flex;
+    border: solid .4px;
     outline: none;
-    background: transparent;
-    font-size: 16px;
+   
+    margin: 2px;    
+    font-size: 16px;  
     color: #333;
     padding: 10px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px;
   }
   
   .send-button {
@@ -63,4 +81,5 @@
     color: #fff;
     font-size: 16px;
     font-weight: bold;
+    
   }
